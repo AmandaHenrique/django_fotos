@@ -1,0 +1,15 @@
+PARA ADICIONAR FOTOS
+
+baixar pip install Pillow
+
+Setting adicionar 
+MEDIA = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
+
+foto = models.ImageField(upload_to = '', null = True)
+
+ir no url :
+from django.conf.urls.static import static
+from django.conf import settings
+
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
